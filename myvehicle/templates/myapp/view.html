@@ -1,0 +1,26 @@
+{% extends 'myapp/base.html' %}
+
+
+{% block content %}
+<center>
+<h2 ><a href="/">User Access Management system Details</a></h2>
+</center>
+<hr>
+    {% for post in data %}
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2><a href="{% url 'post_detail' pk=post.id %}" style="color:rgb(233, 53, 53)">{{post.vehicle_number}}</a></h2>
+      <h6 style="color:mediumslateblue"> {{post.vehicle_type}}</h6>
+       <strong style="color:rgb(242, 157, 46)">{{post.vehicle_desc}}</strong>
+       <p style="color:rgb(77, 91, 126)">{{post.vehicle_model}}</p>
+    </div>
+  </div>
+</div>
+<hr>
+ 
+    {% endfor %}
+  
+
+
+{% endblock %}

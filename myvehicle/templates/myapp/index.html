@@ -1,0 +1,78 @@
+{% extends 'myapp/base.html' %}
+
+
+{% block content %}
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://images.pexels.com/photos/9611952/pexels-photo-9611952.jpeg" width="100%" class="d-block w-100"
+        alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.pexels.com/photos/207779/pexels-photo-207779.jpeg" width="100%" class="d-block w-100"
+        alt="...">
+    </div>
+    <div class="carousel-item">
+      <img
+        src="https://images.pexels.com/photos/1619299/pexels-photo-1619299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        width="100%" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<div class="container-fluid">
+  <br><h2 style="font-family: 'Crimson Text', serif;color:rgb(236, 123, 48)">Best cars in india - 2023<hr></h2>
+  <div class="row">
+    <div class="col-sm-7">
+      <b style="font-family: 'Crimson Text', serif;font-size:20px;color:rgb(223, 157, 35)">The automotive industry is an ever-changing world, with new types of cars on the market every year.
+        Technological innovations by the automakers have led to several new car types that did not exist a few years
+        ago, and nowadays there are far over twenty different types of cars on the market.
+        The most common car type is the sedan. A sedan is a four-door car type with a traditional trunk. The difference
+        between a hatchback and a sedan is that the rear luggage compartment door does not include the rear window and
+        the door hinges are installed under the window.</b>
+    </div>
+    <div class="col-sm-5">
+      <img
+        src="https://images.pexels.com/photos/1075947/pexels-photo-1075947.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1"
+        width="100%" style="border-radius:10px">
+        <h3 style="margin-left:180px;color:rgb(223, 157, 35)">Hyundai verna</h3>
+    </div>
+  </div>
+</div>
+<br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4">
+      <img
+        src="https://images.pexels.com/photos/2920064/pexels-photo-2920064.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        width="100%" style="border-radius:10px">
+        <h3 style="margin-left:120px;color:rgb(223, 157, 35)">Hyundai Creta</h3>
+    </div>
+    <div class="col-sm-8">
+      <b style="font-family: 'Crimson Text', serif;font-size:20px;color:rgb(235, 169, 26)">These models have reduced complexity yet capture the kinematics of the crash with the load paths and
+        components. The methodology includes the use of lumped parameter models, fine-grained lumped models and coarse
+        mesh finite element models. One of the major challenges is that the accuracy of these models is affected by the
+        simplifications and reduced number of degrees of freedom (DOF). Lumped parameter models are the most commonly
+        used reduced order models; they include spring-damper systems replicating a deformable part and a concentrated
+        mass representing the undeformed structures like engine and transmissions. </b>
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock %}

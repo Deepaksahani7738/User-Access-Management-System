@@ -1,0 +1,22 @@
+{% extends 'myapp/base.html' %}
+
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6">
+            <h2 style="color:rgb(233, 53, 53)">{{post.vehicle_number}}</h2>
+            <h6  style="color:mediumslateblue"> {{post.vehicle_type}}</h6>
+             <strong style="color:rgb(242, 157, 46)">{{post.vehicle_desc}}</strong>
+             <p style="color:rgb(77, 91, 126)">{{post.vehicle_model}}</p>
+             <a class="btn btn-danger" href="{% url 'post_delete' pk=post.pk %}" onclick="return confirm('are you sure')">Delete Post</a>
+             <a class="btn btn-primary" href="{% url 'post_edit' pk=post.pk %}">Edit Post</a>
+             <a class="btn btn-info" href="{% url 'view_data' %}">Back</a>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
